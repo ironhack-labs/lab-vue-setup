@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ImageNavigatorView from "../views/ImageNavigatorView.vue";
+import FormView from "../views/FormView.vue";
 
 const routes = [
   {
@@ -14,6 +15,13 @@ const routes = [
     name: "image-navigator",
     component: ImageNavigatorView,
   },
+
+  {
+    path: "/form-vue",
+    name: "form-vue",
+    component: FormView,
+  },
+
   {
     path: "/about",
     name: "about",
