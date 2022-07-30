@@ -26,7 +26,7 @@ export default {
       this.index++;
     },
     previous() {
-      if (this.index > 0) {
+      if (this.index > 1) {
         this.index--;
       }
     },
@@ -38,6 +38,10 @@ export default {
       const newPic = `https://picsum.photos/seed/${randomNumber}/200/300`;
       this.imgHistory = [...this.imgHistory, newPic];
     },
+  },
+  mounted() {
+    this.getNewRandomImage();
+    this.index++;
   },
 };
 </script>
