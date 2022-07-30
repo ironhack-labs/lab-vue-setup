@@ -1,5 +1,5 @@
 <template>
-  <img :src="getCurrentImage()" />
+  <img v-if="index > 0" :src="getCurrentImage()" />
   <div>
     <button @click="previous">{{ "<" }}</button>
     <button @click="next">{{ ">" }}</button>
