@@ -3,6 +3,7 @@
   {{ 2 + 2 }}
   {{ value }} {{ valuePlusTwo }}
   <button @click="helloWorld">Hello World</button>
+  <div v-if="show">true</div>
 </template>
 
 <script>
@@ -19,6 +20,7 @@ export default {
   data() {
     return {
       value: 2,
+      show: true,
     };
   },
   computed: {
