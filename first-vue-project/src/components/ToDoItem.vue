@@ -2,13 +2,17 @@
   <div>
     <!-- <input type="checkbox" name="todo-item" id="todo-item"/>
     <label for="todo-item">My Todo Item</label> -->
-    <h1> To Do Item </h1>
+    <h1> {{ msg }} </h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ToDoItem',
+  data() {
+    return {
+      msg: 'ToDoItem',
+    };
+  },
 };
 </script>
 
