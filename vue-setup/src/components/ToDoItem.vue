@@ -1,13 +1,13 @@
 <template>
-    <label for="todo">My Todo Item
+    <label for="todo">{{ message }}
         <input type="checkbox" id="todo" />
     </label>
 </template>
 
-<script>
-// export default {
+<script setup>
+import { ref } from 'vue';
 
-// }
+const message = ref('My ToDo Item');
 </script>
 
 <style>
