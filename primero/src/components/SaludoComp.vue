@@ -1,8 +1,20 @@
 <template>
   <div>
-    <h1>Hola que tal</h1>
+    <h1>{{message}}</h1>
+  <button @click= "helloworld">Cambiar Saludo</button>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      message: 'Hola que tal',
+    };
+  },
+  methods: {
+    helloworld() {
+      this.message = 'Hello World';
+    },
+  },
+};
 </script>
