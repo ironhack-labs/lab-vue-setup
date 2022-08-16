@@ -2,8 +2,7 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <ToDoItem>
-    </ToDoItem>
+    <ToDoItem></ToDoItem>
   </div>
 </template>
 
