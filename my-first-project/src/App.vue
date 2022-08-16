@@ -1,10 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id='app'>
+  <h1>To-Do List</h1>
+  <ul>
+    <li>
+      <to-do-item></to-do-item>
+    </li>
+  </ul>
+</div>
 </template>
+
+<script>
+import ToDoItem from '@/components/ToDoItem.vue';
+
+export default ({
+  components: {
+    ToDoItem,
+  },
+});
+</script>
 
 <style>
 #app {
