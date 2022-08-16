@@ -1,10 +1,16 @@
 /* eslint-disable */
 <template>
-  <h1>Nuevo componente de Cris</h1>
+  <h1>
+    {{ message }}
+  </h1>
 </template>
 
 <script>
 export default {
-  name: 'ToDoItem',
+  data() {
+    return {
+      message: 'Este es el componente ToDoItem',
+    };
+  },
 };
 </script>

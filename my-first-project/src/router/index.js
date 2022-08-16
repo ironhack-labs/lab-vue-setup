@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
+import TodoItemView from '../views/TodoItemView.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView,
+  },
+  {
+    path: '/todo-item-view',
+    name: 'todo-item-view',
+    component: TodoItemView,
   },
   {
     path: '/about',
