@@ -52,7 +52,7 @@ export default {
         price: '$90,000',
       },
       {
-        model: 'Wolkswagen Golf',
+        model: 'Volkswagen Golf',
         year: '2016',
         color: 'black',
         price: '$10,000',
