@@ -11,9 +11,13 @@ import CounterO from "./components/CounterO.vue";
 import CounterC from "./components/CounterC.vue";
 </script>
 
-<style scoped>
+<style>
 h1 {
   margin: 0 auto 2rem auto;
+}
+
+p {
+  text-align: center;
 }
 .grid {
   display: grid;

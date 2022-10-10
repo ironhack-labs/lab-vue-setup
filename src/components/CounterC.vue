@@ -6,8 +6,8 @@
       <label for="qty">Qty</label>
       <input type="number" name="qty" id="" v-model="incremento" />
     </div>
-    <button @click="sumar(incremento)">Suma</button>
-    <button @click="restar(incremento)">Resta</button>
+    <button @click="sumar(incremento)" v-bind:disabled="isEmpty()">Suma</button>
+    <button @click="restar(incremento)" :disabled="(!incremento || incremento.length === 0)">Resta</button>
     <button @click="reset()">Reset</button>
   </div>
   <button @click="hello()">Hello World!</button>
@@ -32,16 +32,16 @@ const reset = () => {
   incremento.value = 1;
 };
 
+const isEmpty = () => {
+  return (!incremento.value || incremento.value.length === 0);
+}
+
 const hello = () => {
   console.log("'Hello World!' from Composition");
 };
 </script>
 
 <style scoped>
-p {
-  text-align: center;
-}
-
 .controles {
   display: flex;
   gap: 1rem;
