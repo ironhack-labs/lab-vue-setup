@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <p>El resultado de 2 + 2 es: {{var1}}</p>
   <button @click="showNumber">Calcular</button>
   <p v-if="check">El resultado es: {{var1}}</p>
@@ -14,6 +15,7 @@
 
 <script setup>
 import {ref } from "vue";
+import Header from "./components/header.vue";
 
 let juegos = [
   {
